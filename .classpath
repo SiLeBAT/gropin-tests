@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="pmflibs/CombineArchive-1.1.jar"/>
+	<classpathentry kind="lib" path="pmflibs/jdom2-2.0.6.jar"/>
+	<classpathentry kind="lib" path="pmflibs/jsbml-1.2-SNAPSHOT-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="pmflibs/pmfml-0.0.1.jar"/>
+	<classpathentry kind="var" path="OO_PROGRAM"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lo"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
