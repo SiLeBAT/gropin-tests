@@ -695,7 +695,7 @@ public class GroupinTest {
 			return growthNoGrowth;
 		}
 
-		public void setGrowthNoGrowth(String growthNoGrowth) {
+		public void setGrowthNoGrowth(final String growthNoGrowth) {
 			this.growthNoGrowth = growthNoGrowth;
 		}
 
@@ -714,7 +714,7 @@ public class GroupinTest {
 			return modelNumber;
 		}
 
-		public void setModelNumber(short modelNumber) {
+		public void setModelNumber(final short modelNumber) {
 			this.modelNumber = modelNumber;
 		}
 
@@ -733,7 +733,7 @@ public class GroupinTest {
 			return substrate;
 		}
 
-		public void setSubstrate(String substrate) {
+		public void setSubstrate(final String substrate) {
 			this.substrate = substrate;
 		}
 
@@ -752,7 +752,7 @@ public class GroupinTest {
 			return authors;
 		}
 
-		public void setAuthors(String authors) {
+		public void setAuthors(final String authors) {
 			this.authors = authors;
 		}
 
@@ -771,7 +771,7 @@ public class GroupinTest {
 			return paper;
 		}
 
-		public void setPaper(String paper) {
+		public void setPaper(final String paper) {
 			this.paper = paper;
 		}
 
@@ -790,7 +790,7 @@ public class GroupinTest {
 			return journal;
 		}
 
-		public void setJournal(String journal) {
+		public void setJournal(final String journal) {
 			this.journal = journal;
 		}
 
@@ -809,7 +809,7 @@ public class GroupinTest {
 			return issue;
 		}
 
-		public void setIssue(String issue) {
+		public void setIssue(final String issue) {
 			this.issue = issue;
 		}
 
@@ -828,7 +828,7 @@ public class GroupinTest {
 			return inactive;
 		}
 
-		public void setInactive(String inactive) {
+		public void setInactive(final String inactive) {
 			this.inactive = inactive;
 		}
 
@@ -847,7 +847,7 @@ public class GroupinTest {
 			return microorganisms;
 		}
 
-		public void setMicroorganisms(String microorganisms) {
+		public void setMicroorganisms(final String microorganisms) {
 			this.microorganisms = microorganisms;
 		}
 
@@ -866,7 +866,7 @@ public class GroupinTest {
 			return psicheck;
 		}
 
-		public void setPsicheck(String psicheck) {
+		public void setPsicheck(final String psicheck) {
 			this.psicheck = psicheck;
 		}
 
@@ -885,7 +885,7 @@ public class GroupinTest {
 			return product;
 		}
 
-		public void setProduct(String product) {
+		public void setProduct(final String product) {
 			this.product = product;
 		}
 
@@ -904,7 +904,7 @@ public class GroupinTest {
 			return authorAndYear;
 		}
 
-		public void setAuthorAndYear(String authorAndYear) {
+		public void setAuthorAndYear(final String authorAndYear) {
 			this.authorAndYear = authorAndYear;
 		}
 
@@ -923,7 +923,7 @@ public class GroupinTest {
 			return modelCateg;
 		}
 
-		public void setModelCateg(String modelCateg) {
+		public void setModelCateg(final String modelCateg) {
 			this.modelCateg = modelCateg;
 		}
 
@@ -942,7 +942,7 @@ public class GroupinTest {
 			return integrated;
 		}
 
-		public void setIntegrated(String integrated) {
+		public void setIntegrated(final String integrated) {
 			this.integrated = integrated;
 		}
 
@@ -961,7 +961,7 @@ public class GroupinTest {
 			return mumaxUn;
 		}
 
-		public void setMumaxUn(String mumaxUn) {
+		public void setMumaxUn(final String mumaxUn) {
 			this.mumaxUn = mumaxUn;
 		}
 
@@ -980,7 +980,7 @@ public class GroupinTest {
 			return rateLabel;
 		}
 
-		public void setRateLabel(String rateLabel) {
+		public void setRateLabel(final String rateLabel) {
 			this.rateLabel = rateLabel;
 		}
 
@@ -999,7 +999,7 @@ public class GroupinTest {
 			return specialNotes;
 		}
 
-		public void setSpecialNotes(String specialNotes) {
+		public void setSpecialNotes(final String specialNotes) {
 			this.specialNotes = specialNotes;
 		}
 
@@ -1018,7 +1018,7 @@ public class GroupinTest {
 			return referenceEquation;
 		}
 
-		public void setReferenceEquation(String referenceEquation) {
+		public void setReferenceEquation(final String referenceEquation) {
 			this.referenceEquation = referenceEquation;
 		}
 
@@ -1037,7 +1037,7 @@ public class GroupinTest {
 			return possibleSimulations;
 		}
 
-		public void setPossibleSimulations(String possibleSimulations) {
+		public void setPossibleSimulations(final String possibleSimulations) {
 			this.possibleSimulations = possibleSimulations;
 		}
 
@@ -1056,7 +1056,7 @@ public class GroupinTest {
 			return rateSolutionFormat;
 		}
 
-		public void setRateSolutionFormat(String rateSolutionFormat) {
+		public void setRateSolutionFormat(final String rateSolutionFormat) {
 			this.rateSolutionFormat = rateSolutionFormat;
 		}
 
@@ -1075,7 +1075,7 @@ public class GroupinTest {
 			return equation;
 		}
 
-		public void setEquation(String equation) {
+		public void setEquation(final String equation) {
 			this.equation = equation;
 		}
 
