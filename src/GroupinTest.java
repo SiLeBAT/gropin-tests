@@ -636,455 +636,382 @@ public class GroupinTest {
 
 	static class GropinModel {
 
-		/** Growth or No Growth model. */
-		private String growthNoGrowth;
-
-		/** Model sequential numbering. */
-		private Short modelNumber;
-
-		private String substrate;
-
-		/** Authors of model's paper. */
-		private String authors;
-
-		/** Model's paper. */
-		private String paper;
-
-		/** Journal. */
-		private String journal;
-
-		/** Journal issue. */
-		private String issue;
-
-		private String inactive;
-
-		/** Microorganisms. */
-		private String microorganisms;
-
-		private String authorAndYear;
-
-		private String product;
-
-		private String psicheck;
-
-		private String modelCateg;
-
-		private String integrated;
-
-		private String mumaxUn;
-
-		private String rateLabel;
-
-		private String specialNotes;
-
-		private String referenceEquation;
-
-		/** Cases of possible simulations. */
-		private String possibleSimulations;
-
-		/** format of the rate solution. */
-		private String rateSolutionFormat;
-
-		/** Equation. */
-		private String equation;
+		private Map<GropinColumns, String> data = new HashMap<>();
 
 		// --- growthNoGrowth ---
 		public String getGrowthNoGrowth() {
-			if (growthNoGrowth == null)
-				throw new RuntimeException("growthNoGrowth not set");
-			return growthNoGrowth;
+			return data.get(GropinColumns.model_type);
 		}
 
 		public void setGrowthNoGrowth(final String growthNoGrowth) {
-			this.growthNoGrowth = growthNoGrowth;
+			if (growthNoGrowth != null && !growthNoGrowth.isEmpty())
+				data.put(GropinColumns.model_type, growthNoGrowth);
 		}
 
 		public void unsetGrowthNoGrowth() {
-			growthNoGrowth = null;
+			data.remove(GropinColumns.model_type);
 		}
 
 		public boolean isSetGrowthNoGrowth() {
-			return growthNoGrowth != null;
+			return data.containsKey(GropinColumns.model_type);
 		}
 
 		// --- Model number ---
 		public short getModelNumber() {
-			if (modelNumber == null)
-				throw new RuntimeException("Model number is not set");
-			return modelNumber;
+			return Short.parseShort(data
+					.get(GropinColumns.sequential_numbering));
 		}
 
 		public void setModelNumber(final short modelNumber) {
-			this.modelNumber = modelNumber;
+			data.put(GropinColumns.sequential_numbering,
+					Short.toString(modelNumber));
 		}
 
 		public void unsetModelNumber() {
-			modelNumber = null;
+			data.remove(GropinColumns.sequential_numbering);
 		}
 
 		public boolean isSetModelNumber() {
-			return modelNumber != null;
+			return data.containsKey(GropinColumns.sequential_numbering);
 		}
 
 		// --- substrate ---
 		public String getSubstrate() {
-			if (substrate == null)
-				throw new RuntimeException("Substrate is not set");
-			return substrate;
+			return data.get(GropinColumns.substrate);
 		}
 
 		public void setSubstrate(final String substrate) {
-			this.substrate = substrate;
+			if (substrate != null && !substrate.isEmpty())
+				data.put(GropinColumns.substrate, substrate);
 		}
 
 		public void unsetSubstrate() {
-			substrate = null;
+			data.remove(GropinColumns.substrate);
 		}
 
 		public boolean isSetSubstrate() {
-			return substrate != null;
+			return data.containsKey(GropinColumns.substrate);
 		}
 
 		// --- Authors of model's paper ---
 		public String getAuthors() {
-			if (authors == null)
-				throw new RuntimeException("Authors of model's papers not set");
-			return authors;
+			return data.get(GropinColumns.authors);
 		}
 
 		public void setAuthors(final String authors) {
-			this.authors = authors;
+			if (authors != null && !authors.isEmpty())
+				data.put(GropinColumns.authors, authors);
 		}
 
 		public void unsetAuthors() {
-			authors = null;
+			data.remove(GropinColumns.authors);
 		}
 
 		public boolean isSetAuthors() {
-			return authors != null;
+			return data.containsKey(GropinColumns.authors);
 		}
 
 		// --- Model's paper ---
 		public String getPaper() {
-			if (paper == null)
-				throw new RuntimeException("Paper not set");
-			return paper;
+			return data.get(GropinColumns.paper);
 		}
 
 		public void setPaper(final String paper) {
-			this.paper = paper;
+			if (paper != null && !paper.isEmpty())
+				data.put(GropinColumns.paper, paper);
 		}
 
 		public void unsetPaper() {
-			paper = null;
+			data.remove(GropinColumns.paper);
 		}
 
 		public boolean isSetPaper() {
-			return paper != null;
+			return data.containsKey(GropinColumns.paper);
 		}
 
 		// --- journal ---
 		public String getJournal() {
-			if (journal == null)
-				throw new RuntimeException("Journal not set");
-			return journal;
+			return data.get(GropinColumns.journal);
 		}
 
 		public void setJournal(final String journal) {
-			this.journal = journal;
+			if (journal != null && !journal.isEmpty())
+				data.put(GropinColumns.journal, journal);
 		}
 
 		public void unsetJournal() {
-			journal = null;
+			data.remove(GropinColumns.journal);
 		}
 
 		public boolean isSetJournal() {
-			return journal != null;
+			return data.containsKey(GropinColumns.journal);
 		}
 
 		// --- issue ---
 		public String getIssue() {
-			if (issue == null)
-				throw new RuntimeException("Issue not set");
-			return issue;
+			return data.get(GropinColumns.issue);
 		}
 
 		public void setIssue(final String issue) {
-			this.issue = issue;
+			if (issue != null && !issue.isEmpty())
+				data.put(GropinColumns.issue, issue);
 		}
 
 		public void unsetIssue() {
-			issue = null;
+			data.remove(GropinColumns.issue);
 		}
 
 		public boolean isSetIssue() {
-			return issue != null;
+			return data.containsKey(GropinColumns.issue);
 		}
 
 		// --- inactive ---
 		public String getInactive() {
-			if (inactive == null)
-				throw new RuntimeException("Inactive not set");
-			return inactive;
+			return data.get(GropinColumns.inactive);
 		}
 
 		public void setInactive(final String inactive) {
-			this.inactive = inactive;
+			if (inactive != null && !inactive.isEmpty())
+				data.put(GropinColumns.inactive, inactive);
 		}
 
 		public void unsetInactive() {
-			inactive = null;
+			data.remove(GropinColumns.inactive);
 		}
 
 		public boolean isSetInactive() {
-			return inactive != null;
+			return data.containsKey(GropinColumns.inactive);
 		}
 
 		// --- microorganisms ---
 		public String getMicroorganisms() {
-			if (microorganisms == null)
-				throw new RuntimeException("Microorganisms not set");
-			return microorganisms;
+			return data.get(GropinColumns.microorganisms);
 		}
 
 		public void setMicroorganisms(final String microorganisms) {
-			this.microorganisms = microorganisms;
+			if (microorganisms != null && !microorganisms.isEmpty())
+				data.put(GropinColumns.microorganisms, microorganisms);
 		}
 
 		public void unsetMicroorganisms() {
-			microorganisms = null;
+			data.remove(GropinColumns.microorganisms);
 		}
 
 		public boolean isSetMicroorganisms() {
-			return microorganisms != null;
+			return data.containsKey(GropinColumns.microorganisms);
 		}
 
 		// --- psicheck ---
 		public String getPsicheck() {
-			if (psicheck == null)
-				throw new RuntimeException("psicheck not set");
-			return psicheck;
+			return data.get(GropinColumns.psicheck);
 		}
 
 		public void setPsicheck(final String psicheck) {
-			this.psicheck = psicheck;
+			if (psicheck != null && !psicheck.isEmpty())
+				data.put(GropinColumns.psicheck, psicheck);
 		}
 
 		public void unsetPsicheck() {
-			psicheck = null;
+			data.remove(GropinColumns.psicheck);
 		}
 
 		public boolean isSetPsicheck() {
-			return psicheck != null;
+			return data.containsKey(GropinColumns.psicheck);
 		}
 
 		// --- product ---
 		public String getProduct() {
-			if (product == null)
-				throw new RuntimeException("Product not set");
-			return product;
+			return data.get(GropinColumns.product);
 		}
 
 		public void setProduct(final String product) {
-			this.product = product;
+			data.put(GropinColumns.product, product);
 		}
 
 		public void unsetProduct() {
-			product = null;
+			data.remove(GropinColumns.product);
 		}
 
 		public boolean isSetProduct() {
-			return product != null;
+			return data.containsKey(GropinColumns.product);
 		}
 
 		// --- author and year ---
 		public String getAuthorAndYear() {
-			if (authorAndYear == null)
-				throw new RuntimeException("Author and year not set");
-			return authorAndYear;
+			return data.get(GropinColumns.first_author_and_year);
 		}
 
 		public void setAuthorAndYear(final String authorAndYear) {
-			this.authorAndYear = authorAndYear;
+			if (authorAndYear != null && !authorAndYear.isEmpty())
+				data.put(GropinColumns.first_author_and_year, authorAndYear);
 		}
 
 		public void unsetAuthorAndYear() {
-			authorAndYear = null;
+			data.remove(GropinColumns.first_author_and_year);
 		}
 
 		public boolean isSetAuthorAndYear() {
-			return authorAndYear != null;
+			return data.containsKey(GropinColumns.first_author_and_year);
 		}
 
 		// --- modelCateg ---
 		public String getModelCateg() {
-			if (modelCateg == null)
-				throw new RuntimeException("modelCateg not set");
-			return modelCateg;
+			return data.get(GropinColumns.model_categ);
 		}
 
 		public void setModelCateg(final String modelCateg) {
-			this.modelCateg = modelCateg;
+			data.put(GropinColumns.model_categ, modelCateg);
 		}
 
 		public void unsetModelCateg() {
-			modelCateg = null;
+			data.remove(GropinColumns.model_categ);
 		}
 
 		public boolean isSetModelCateg() {
-			return modelCateg != null;
+			return data.containsKey(GropinColumns.model_categ);
 		}
 
 		// --- integrated ---
 		public String getIntegrated() {
-			if (integrated == null)
-				throw new RuntimeException("integrated not set");
-			return integrated;
+			return data.get(GropinColumns.integrated);
 		}
 
 		public void setIntegrated(final String integrated) {
-			this.integrated = integrated;
+			if (integrated != null && !integrated.isEmpty())
+				data.put(GropinColumns.integrated, integrated);
 		}
 
 		public void unsetIntegrated() {
-			integrated = null;
+			data.remove(GropinColumns.integrated);
 		}
 
 		public boolean isSetIntegrated() {
-			return integrated != null;
+			return data.containsKey(GropinColumns.integrated);
 		}
 
 		// --- mumaxUn ---
 		public String getMumaxUn() {
-			if (mumaxUn == null)
-				throw new RuntimeException("mumaxUn not set");
-			return mumaxUn;
+			return data.get(GropinColumns.mumax_un);
 		}
 
 		public void setMumaxUn(final String mumaxUn) {
-			this.mumaxUn = mumaxUn;
+			if (mumaxUn != null && !mumaxUn.isEmpty())
+				data.put(GropinColumns.mumax_un, mumaxUn);
 		}
 
 		public void unsetMumaxUn() {
-			mumaxUn = null;
+			data.remove(GropinColumns.mumax_un);
 		}
 
 		public boolean isSetMumaxUn() {
-			return mumaxUn != null;
+			return data.containsKey(GropinColumns.mumax_un);
 		}
 
 		// --- rate label ---
 		public String getRateLabel() {
-			if (rateLabel == null)
-				throw new RuntimeException("rate label not set");
-			return rateLabel;
+			return data.get(GropinColumns.rate_label);
 		}
 
 		public void setRateLabel(final String rateLabel) {
-			this.rateLabel = rateLabel;
+			if (rateLabel != null && !rateLabel.isEmpty())
+				data.put(GropinColumns.rate_label, rateLabel);
 		}
 
 		public void unsetRateLabel() {
-			rateLabel = null;
+			data.remove(GropinColumns.rate_label);
 		}
 
 		public boolean isSetRateLabel() {
-			return rateLabel != null;
+			return data.containsKey(GropinColumns.rate_label);
 		}
 
 		// --- special notes ---
 		public String getSpecialNotes() {
-			if (specialNotes == null)
-				throw new RuntimeException("special notes not set");
-			return specialNotes;
+			return data.get(GropinColumns.special_notes);
 		}
 
 		public void setSpecialNotes(final String specialNotes) {
-			this.specialNotes = specialNotes;
+			if (specialNotes != null && !specialNotes.isEmpty())
+				data.put(GropinColumns.special_notes, specialNotes);
 		}
 
 		public void unsetSpecialNotes() {
-			specialNotes = null;
+			data.remove(GropinColumns.special_notes);
 		}
 
 		public boolean isSetSpecialNotes() {
-			return specialNotes != null;
+			return data.containsKey(GropinColumns.special_notes);
 		}
 
 		// --- reference equation ---
 		public String getReferenceEquation() {
-			if (referenceEquation == null)
-				throw new RuntimeException("reference equation not set");
-			return referenceEquation;
+			return data.get(GropinColumns.reference_equation);
 		}
 
 		public void setReferenceEquation(final String referenceEquation) {
-			this.referenceEquation = referenceEquation;
+			if (referenceEquation != null && !referenceEquation.isEmpty())
+				data.put(GropinColumns.reference_equation, referenceEquation);
 		}
 
 		public void unsetReferenceEquation() {
-			referenceEquation = null;
+			data.remove(GropinColumns.reference_equation);
 		}
 
 		public boolean isSetReferenceEquation() {
-			return referenceEquation != null;
+			return data.containsKey(GropinColumns.reference_equation);
 		}
 
 		// --- cases of possible simulations ---
 		public String getPossibleSimulations() {
-			if (possibleSimulations == null)
-				throw new RuntimeException("possible simulations not set");
-			return possibleSimulations;
+			return data.get(GropinColumns.possible_simulations);
 		}
 
 		public void setPossibleSimulations(final String possibleSimulations) {
-			this.possibleSimulations = possibleSimulations;
+			data.put(GropinColumns.possible_simulations, possibleSimulations);
 		}
 
 		public void unsetPossibleSimulations() {
-			possibleSimulations = null;
+			data.remove(GropinColumns.possible_simulations);
 		}
 
 		public boolean isSetPossibleSimulations() {
-			return possibleSimulations != null;
+			return data.containsKey(GropinColumns.possible_simulations);
 		}
 
 		// --- format of the rate solution ---
 		public String getRateSolutionFormat() {
-			if (rateSolutionFormat == null)
-				throw new RuntimeException("rate solution format not set");
-			return rateSolutionFormat;
+			return data.get(GropinColumns.rate_solution_format);
 		}
 
 		public void setRateSolutionFormat(final String rateSolutionFormat) {
-			this.rateSolutionFormat = rateSolutionFormat;
+			if (rateSolutionFormat != null && !rateSolutionFormat.isEmpty())
+				data.put(GropinColumns.rate_solution_format, rateSolutionFormat);
 		}
 
 		public void unsetRateSolutionFormat() {
-			rateSolutionFormat = null;
+			data.remove(GropinColumns.rate_solution_format);
 		}
 
 		public boolean isSetRateSolutionFormat() {
-			return rateSolutionFormat != null;
+			return data.containsKey(GropinColumns.rate_solution_format);
 		}
 
 		// --- equation ---
 		public String getEquation() {
-			if (equation == null)
-				throw new RuntimeException("equation not set");
-			return equation;
+			return data.get(GropinColumns.equation);
 		}
 
 		public void setEquation(final String equation) {
-			this.equation = equation;
+			if (equation != null && !equation.isEmpty())
+				data.put(GropinColumns.equation, equation);
 		}
 
 		public void unsetEquation() {
-			equation = null;
+			data.remove(GropinColumns.equation);
 		}
 
 		public boolean isSetEquation() {
-			return equation != null;
+			return data.containsKey(GropinColumns.equation);
 		}
 	}
 }
