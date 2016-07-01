@@ -591,18 +591,47 @@ public class GroupinTest {
 			sheet.getCellByPosition(GropinColumns.product.ordinal(), rowNumber)
 					.setFormula(model.getProduct());
 
-		/*
-		 * TODO: psicheck
-		 * TODO: modelCateg
-		 * TODO: integrated
-		 * TODO: mumaxUn
-		 * TODO: rateLabel
-		 * TODO: specialNotes
-		 * TODO: referenceEquation
-		 * TODO: possibleSimulations
-		 * TODO: rateSolutionFormat
-		 * TODO: equation
-		 */
+		if (model.isSetPsicheck())
+			sheet.getCellByPosition(GropinColumns.psicheck.ordinal(), rowNumber)
+					.setFormula(model.getPsicheck());
+
+		if (model.isSetModelCateg())
+			sheet.getCellByPosition(GropinColumns.model_categ.ordinal(),
+					rowNumber).setFormula(model.getModelCateg());
+
+		if (model.isSetIntegrated())
+			sheet.getCellByPosition(GropinColumns.integrated.ordinal(),
+					rowNumber).setFormula(model.getIntegrated());
+
+		if (model.isSetMumaxUn())
+			sheet.getCellByPosition(GropinColumns.mumax_un.ordinal(), rowNumber)
+					.setFormula(model.getMumaxUn());
+
+		if (model.isSetRateLabel())
+			sheet.getCellByPosition(GropinColumns.rate_label.ordinal(),
+					rowNumber).setFormula(model.getRateLabel());
+
+		if (model.isSetSpecialNotes())
+			sheet.getCellByPosition(GropinColumns.special_notes.ordinal(),
+					rowNumber).setFormula(model.getSpecialNotes());
+
+		if (model.isSetReferenceEquation())
+			sheet.getCellByPosition(GropinColumns.reference_equation.ordinal(),
+					rowNumber).setFormula(model.getReferenceEquation());
+
+		if (model.isSetPossibleSimulations())
+			sheet.getCellByPosition(
+					GropinColumns.possible_simulations.ordinal(), rowNumber)
+					.setFormula(model.getPossibleSimulations());
+
+		if (model.isSetRateSolutionFormat())
+			sheet.getCellByPosition(
+					GropinColumns.rate_solution_format.ordinal(), rowNumber)
+					.setFormula(model.getRateSolutionFormat());
+
+		if (model.isSetEquation())
+			sheet.getCellByPosition(GropinColumns.equation.ordinal(), rowNumber)
+					.setFormula(model.getEquation());
 	}
 
 	static class GropinModel {
@@ -1035,7 +1064,7 @@ public class GroupinTest {
 			rateSolutionFormat = null;
 		}
 
-		public boolean isSetRateSolution() {
+		public boolean isSetRateSolutionFormat() {
 			return rateSolutionFormat != null;
 		}
 
